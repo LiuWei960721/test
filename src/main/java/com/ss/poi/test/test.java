@@ -13,7 +13,7 @@ public class test {
     public static void main(String[] args) throws Exception {
         String filepath = "D:/L/LiuWeiSS7/20200312-143650.data";
         String dataStr = GsonUtil.readFile2String(filepath);
-        /*System.out.println(dataStr);*/
+     System.out.println(dataStr);
         WordReport.creatWordReport(dataStr);
     }
 
