@@ -88,8 +88,8 @@ public class OperateTable {
 				// 设置表头
 				while (tableHeanderIndex < 3) {
 					POITableUtil.setCellValueString(table, 0, 3 * tableHeanderIndex, "序号");
-					POITableUtil.setCellValueString(table, 0, 3 * tableHeanderIndex + 1, "电阻");
-					POITableUtil.setCellValueString(table, 0, 3 * tableHeanderIndex + 2, "电压");
+					POITableUtil.setCellValueString(table, 0, 3 * tableHeanderIndex + 1, "电阻（Ω）");
+					POITableUtil.setCellValueString(table, 0, 3 * tableHeanderIndex + 2, "电压差值（V）");
 					tableHeanderIndex++;
 				}
 				int xuHaoIndex = 0;
@@ -116,7 +116,7 @@ public class OperateTable {
 				}
 			}
 		}
-		POITableUtil.setTableColmnWidth(table, new int[] { 800, 1200, 1200, 800, 1200, 1200, 800, 1200, 1200 });
+		POITableUtil.setTableColmnWidth(table, new int[] { 1000, 1400, 1400, 1000, 1400, 1400, 1000, 1400, 1400 });
 	}
 	/**
 	 * 创建折线图附属点的表格，默认居中

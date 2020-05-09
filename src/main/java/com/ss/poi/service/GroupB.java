@@ -25,7 +25,6 @@ public class GroupB {
 		String match = getMatcherByData(data);
 		System.out.println("match："+match);
 		XWPFParagraph para = POITableUtil.findOneParagraphByMatch(doc, match);
-
 		if (para != null) {
 			try{
 				List<String> ls = getJiShu(para);

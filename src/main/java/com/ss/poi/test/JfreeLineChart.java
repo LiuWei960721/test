@@ -41,7 +41,6 @@ public class JfreeLineChart {
 		String outFilePath = saveAsFile(freeChart, 1100, 700);
 		return outFilePath;
 	}
-
 	// 保存为文件
 	public static String saveAsFile(JFreeChart chart, int weight, int height) {
 		FileOutputStream out = null;
